@@ -18,6 +18,9 @@
 		7D7C77FF160F13520096E1C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C77FE160F13520096E1C5 /* Default-568h@2x.png */; };
 		7D7C7802160F13520096E1C5 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C7801160F13520096E1C5 /* SocialViewController.m */; };
 		7D7C7805160F13520096E1C5 /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C7803160F13520096E1C5 /* SocialViewController.xib */; };
+		7D7C780C160F13710096E1C5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7C780B160F13710096E1C5 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7D7C780F160F16BF0096E1C5 /* House.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C780E160F16BF0096E1C5 /* House.jpg */; };
+		7D7C7811160F189C0096E1C5 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7C7810160F189C0096E1C5 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		7D7C7800160F13520096E1C5 /* SocialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
 		7D7C7801160F13520096E1C5 /* SocialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		7D7C7804160F13520096E1C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SocialViewController.xib; sourceTree = "<group>"; };
+		7D7C780B160F13710096E1C5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7D7C780E160F16BF0096E1C5 /* House.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = House.jpg; sourceTree = "<group>"; };
+		7D7C7810160F189C0096E1C5 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7C7811160F189C0096E1C5 /* Twitter.framework in Frameworks */,
+				7D7C780C160F13710096E1C5 /* Social.framework in Frameworks */,
 				7D7C77E9160F13520096E1C5 /* UIKit.framework in Frameworks */,
 				7D7C77EB160F13520096E1C5 /* Foundation.framework in Frameworks */,
 				7D7C77ED160F13520096E1C5 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +81,8 @@
 		7D7C77E7160F13520096E1C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D7C7810160F189C0096E1C5 /* Twitter.framework */,
+				7D7C780B160F13710096E1C5 /* Social.framework */,
 				7D7C77E8160F13520096E1C5 /* UIKit.framework */,
 				7D7C77EA160F13520096E1C5 /* Foundation.framework */,
 				7D7C77EC160F13520096E1C5 /* CoreGraphics.framework */,
@@ -83,6 +93,7 @@
 		7D7C77EE160F13520096E1C5 /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				7D7C780D160F16920096E1C5 /* Assets */,
 				7D7C77F7160F13520096E1C5 /* SocialAppDelegate.h */,
 				7D7C77F8160F13520096E1C5 /* SocialAppDelegate.m */,
 				7D7C7800160F13520096E1C5 /* SocialViewController.h */,
@@ -105,6 +116,14 @@
 				7D7C77FE160F13520096E1C5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D7C780D160F16920096E1C5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7D7C780E160F16BF0096E1C5 /* House.jpg */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +183,7 @@
 				7D7C77FD160F13520096E1C5 /* Default@2x.png in Resources */,
 				7D7C77FF160F13520096E1C5 /* Default-568h@2x.png in Resources */,
 				7D7C7805160F13520096E1C5 /* SocialViewController.xib in Resources */,
+				7D7C780F160F16BF0096E1C5 /* House.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +277,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Social/Social-Prefix.pch";
 				INFOPLIST_FILE = "Social/Social-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,6 +289,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Social/Social-Prefix.pch";
 				INFOPLIST_FILE = "Social/Social-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

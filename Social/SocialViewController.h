@@ -2,7 +2,7 @@
 //  SocialViewController.h
 //  Social
 //
-//  Created by kaneshin on 9/23/12.
+//  Created by Shintaro Kaneko on 9/23/12.
 //  Copyright (c) 2012 Shintaro Kaneko. All rights reserved.
 //
 
